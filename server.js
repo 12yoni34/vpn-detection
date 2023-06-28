@@ -43,7 +43,7 @@ async function init(){
             str+=',' + await checkPing(url)
             document.querySelector('textarea').value=str
         }
-        str+='\n'
+        str+='\\n'
     }
 }
 init().then(console.log).catch(console.log)
