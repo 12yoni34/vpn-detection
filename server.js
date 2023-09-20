@@ -13,7 +13,7 @@ app.get('/', async (req, res) => {
     const ipAddress = req.socket.remoteAddress;
         res.send({
                 message:'Hello from ' + await getInstanceRegion() + ' now it ' + new Date() + '. This is Yoni Glickshtein VPN detection  project',
-                ip:ipAdress
+                ip:ipAddress
                  })
 });
 
